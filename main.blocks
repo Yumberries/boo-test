@@ -1,1 +1,40 @@
-<xml xmlns="https://developers.google.com/blockly/xml"><block type="pxt-on-start" x="0" y="0"/></xml>
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable id="=XPY*km[^P/n0AuyFGH4">mySprite</variable><variable type="KIND_SpriteKind" id="8e;}XQoEDu;|k*@SSpQ8">Player</variable><variable type="KIND_SpriteKind" id="lJtj2;a%Cv0M0LoK?q-}">Projectile</variable><variable type="KIND_SpriteKind" id="[5jue0L(KJA(Dwj#@9kw">Food</variable><variable type="KIND_SpriteKind" id="WzHfmMD/a=r*2@^g.#]~">Enemy</variable><variable type="BLOCKLY_TILESET_TYPE" id="5m(u2_|7NskpVx^nPwyS">0;16;16;0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</variable><variable type="BLOCKLY_TILESET_TYPE" id="E)sYR0/[bhdI;rZdqCpk">1;16;16;070000000000007070000000000000070007000000007000007077777777070000707777777707000070f77777f70700007077777777070000707777777707000070777777770700007077ffff7f0700007077777777070000707777777707000070777777770700000700000000700070000000000000070700000000000070</variable><variable type="BLOCKLY_TILESET_TYPE" id="`nHfc4g7Id]6)~p.ku$7">2;16;16;020000000000002020000000000000020002000000002000002022222222020000202222222202000020f222222f020000202222222202000020222222220200002022ffff2202000020222222220200002022222222020000202222222202000020222222220200000200000000200020000000000000020200000000000020</variable></variables><block type="pxt-on-start" id="QAaIM,b!OLwlAI*FH8GF" x="0" y="0"><statement name="HANDLER"><block type="gamesetbackgroundcolor" id="/^;n1)/o^o({R8_(0+(w"><value name="color"><shadow type="colorindexpicker" id="m@QJqgpi6?l+[t^JZPPI"><field name="index">14</field></shadow></value><next><block type="variables_set" id="/U`g:c*d[d6!qjK86wQ."><field name="VAR" id="=XPY*km[^P/n0AuyFGH4">mySprite</field><value name="VALUE"><shadow xmlns="http://www.w3.org/1999/xhtml" type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate" id="N-2FNh)SHo#Ii]4kDpA@"><value name="img"><shadow type="screen_image_picker" id="]kdF:%2MDRHS1e.v3s^U"><field name="img">img`
+. . . . . . f f f f . . . . . . 
+. . . . f f f 2 2 f f f . . . . 
+. . . f f f 2 2 2 2 f f f . . . 
+. . f f f e e e e e e f f f . . 
+. . f f e 2 2 2 2 2 2 e e f . . 
+. . f e 2 f f f f f f 2 e f . . 
+. . f f f f e e e e f f f f . . 
+. f f e f b f 4 4 f b f e f f . 
+. f e e 4 1 f d d f 1 4 e e f . 
+. . f e e d d d d d d e e f . . 
+. . . f e e 4 4 4 4 e e f . . . 
+. . e 4 f 2 2 2 2 2 2 f 4 e . . 
+. . 4 d f 2 2 2 2 2 2 f d 4 . . 
+. . 4 4 f 4 4 5 5 4 4 f 4 4 . . 
+. . . . . f f f f f f . . . . . 
+. . . . . f f . . f f . . . . . 
+`</field></shadow></value><value name="kind"><shadow type="spritekind" id="`9lQDjCcNn,h9OfwijDr"><field name="MEMBER">Player</field></shadow></value></block></value><next><block type="game_control_sprite" id="KbWQ2d-/f(_tP/v4dyQD"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="0" _input_init="false"></mutation><value name="sprite"><block type="variables_get" id="8k-uW-g0$e[ANcC8(U[X"><field name="VAR" id="=XPY*km[^P/n0AuyFGH4">mySprite</field></block></value><next><block type="tilemap_editor" id="R4AD:.:B=l;)-Kg|rUmL"><field name="tilemap">tiles.createTilemap(
+            hex`1000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000`,
+            img`
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+`,
+            [myTiles.tile0,myTiles.tile1,myTiles.tile2],
+            TileScale.Sixteen
+        )</field></block></next></block></next></block></next></block></statement></block></xml>
